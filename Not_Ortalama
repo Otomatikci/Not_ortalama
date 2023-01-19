@@ -1,0 +1,30 @@
+package j03_ScannerClass_TypeCasting.tasks;
+import java.util.Scanner;
+
+public class odev_not_ortalama {
+    public static void main(String[] args) {
+        int mat, muzik, fizik, kimya, turkce, tarih;
+
+        Scanner imp = new Scanner(System.in);
+        System.out.print("Matematik notunu giriniz:");
+        mat = imp.nextInt();
+
+        System.out.print("Fizik notunu giriniz:");
+        fizik = imp.nextInt();
+
+        System.out.print("Muzik notunu giriniz:");
+        muzik = imp.nextInt();
+
+        System.out.print("Kimya notunu giriniz:");
+        kimya = imp.nextInt();
+
+        System.out.print("Turkce notunu giriniz:");
+        turkce = imp.nextInt();
+
+        System.out.print("Tarih notunu giriniz:");
+        tarih = imp.nextInt();
+        int toplam = (mat + muzik + fizik + kimya + turkce + tarih);
+        double sonuc = toplam / 6.0;
+        System.out.println("Not Ortalaması:" + sonuc);
+        System.out.println(sonuc>=60 ? "Sınıfı Geçti":"Sınıfta Kaldı");
+    } }
